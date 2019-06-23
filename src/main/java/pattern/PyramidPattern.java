@@ -11,6 +11,7 @@ public class PyramidPattern {
 	
 	private static void pyramidPattern(int n) {
 		// TODO Auto-generated method stub
+		System.out.println("vishal");
 		for(int i = 0; i<n; i++){
 			for(int j = 1; j<=n-i; j++){
 				System.out.print("  ");
@@ -18,6 +19,7 @@ public class PyramidPattern {
 			for(int k=0; k<=i; k++){
 				System.out.print("* ");
 			}
+			System.out.println("mishra");
 			System.out.println();
 		}
 	}
