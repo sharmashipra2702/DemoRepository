@@ -21,5 +21,9 @@ public class PyramidPattern {
 			System.out.println();
 		}
 	}
+	private void syso() {
+		// TODO Auto-generated method stub
+
+	}
 
 }

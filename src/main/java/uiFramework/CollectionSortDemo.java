@@ -15,13 +15,14 @@ public class CollectionSortDemo {
       System.out.println(al);
       Collections.sort(al, new MyComparator()); 
       System.out.println(al);
-      System.out.println(new MyComparator().add());
       String str = "I Love My Great Green India";
       String[] arr = str.split(" ");
       ArrayList a = new ArrayList();
       for(int i=0; i<arr.length; i++){
     	 a.add(arr[i]);
       }
+      Collections.sort(a);
+      System.out.println(a);
       
       Collections.sort(a, new MyComparator());
       System.out.println(a);
@@ -35,7 +36,9 @@ class MyComparator implements Comparator {
 		// TODO Auto-generated method stub
 		String s1 = arg0.toString();
 		String s2 = arg1.toString();
-		return new Integer(s1.length()).compareTo(new Integer(s2.length()));
+		Integer i1 = s1.length();
+		Integer i2 = s2.length();
+		return i1.compareTo(i2);
 	}
 	
 	public int add(){
