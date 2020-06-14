@@ -13,6 +13,7 @@ public class Testing {
         b[i] = a[i].length();
       }
       Arrays.sort(b);
+      System.out.println(b[b.length-2]);
       for(int j =0; j<b.length; j++){
         System.out.println(b[j]);
       }
